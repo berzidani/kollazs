@@ -7,27 +7,114 @@
 a{
   text-decoration: none;
 }
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #593837;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  overflow: auto;
+}
 
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
+.sidebar a:hover:not(.active) {
+  background-color: #998f41;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.navigacio {
+  overflow: hidden;
+  background-color: #593837;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.navigacio a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigacio a:active {
+  background-color: #998f41;
+}
+
+.navigacio a:hover {
+  background-color: #998f41;
+  color: black;
+}
 
 
 </style>
 </head>
+
 <body style="background-color: rgb(255, 6, 89);">
 
-  
-  
-
-
+<div class="sidebar">
+  <a class="active" href="index.html">Főoldal</a>
+  <a href="keplink.html">KÉPLINK</a>
+  <a href="listak.html">LISTÁK</a>
+  <a href="orarend.html">ÓRAREND</a>
+</div>
 <nav>
-
-<a href="index.html">FŐOLDAL</a>|
-  
-<a href="keplink.html">KÉPLINK</a>|
-<a href="listak.html">LISTÁK</a>|
-<a href="orarend.html">ÓRAREND</a>|
-
+  <div style="margin-left: 200px; margin-top: -8px;" class="navigacio" id="myTopnav">
+    <a href="index.html" id="elso">Főoldal</a>
+    <a href="keplink.html">Képlink</a>
+    <a href="listak.html">Listák</a>
+    <a href="orarend.html" class="aktiv">Órarend</a>
+    <a href="stilus.html">Stílusformázás</a>
+    </a>
+  </div>
 </nav>
+<div class="content">
+  
+
+  
+
+
+
+  
+
+  
 
 
 <h1 style="color: rgb(1, 65, 65);" > Berzi Dániel</h1>
@@ -40,7 +127,7 @@ a{
 <p>A kollázs képem:.</p>
 <img src="https://raw.githubusercontent.com/berzidani/kollazs/main/Koll%C3%A1zs%20k%C3%A9p.jpg" alt="Ezen a képen látható az én kollázsom" width=500>
 </body>
-
+</div>
 </html>
 
 
