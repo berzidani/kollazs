@@ -5,7 +5,7 @@ a{
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #593837;
+    background-color: #3d3b3a;
     position: fixed;
     height: 100%;
     top: 0;
@@ -20,12 +20,12 @@ a{
   }
    
   .sidebar a.active {
-    background-color: #998f41;
+    background-color: #1f1e1e;
     color: white;
   }
   
   .sidebar a:hover:not(.active) {
-    background-color: #998f41;
+    background-color: #1f1e1e;
     color: white;
   }
   
