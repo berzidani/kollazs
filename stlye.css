@@ -54,7 +54,7 @@ a{
   
   .navigacio {
     overflow: hidden;
-    background-color: #593837;
+    background-color: #3d3b3a;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
@@ -69,11 +69,11 @@ a{
   }
   
   .aktiv {
-    background-color: #998f41;
+    background-color: #1f1e1e;
   }
   
   .navigacio a:hover {
-    background-color: #998f41;
+    background-color: #1f1e1e;
     color: black;
   }
 
