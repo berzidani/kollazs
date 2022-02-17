@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+
+</head>
+</head>
+<body>
+    <div class="sidebar">
+        <a  href="index.html" class="aktiv">FŐOLDAL</a>
+        <a href="keplink.html">KÉPLINK</a>
+        <a href="listak.html">LISTÁK</a>
+        <a href="orarend.html">ÓRAREND</a>
+        <a class="active" href="urlap.html">ŰRLAP</a> 
+   </div>
+      <div class="content">
+         
+        <form name="rendeles">
+            <h1>Cipő Rendelés</h1>
+            <fieldset>
+                <legend>Vevő adatai:</legend>           
+                <p><label>Vezetéknév: <input type="tel" name="vezeteknev" size="10"></label></p>
+                <p><label>keresztnev: <input type="tel" name="Keresztnev" size="10"></label></p>     
+                <p><label>Telefon: <input type="tel" name="telefon" size="10"></label></p>
+                <p><label>E-mail: <input type="tel" name="e-mail" size="10"></label></p>
+                 <p><label> Születési hely,idő: <input type="tel" name="szuletesi hely,ido" size="10"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Cipő márkája</legend>
+                <p><label><input type="radio" name="marka" value="Nike">Nike</label></p>
+                <p><label><input type="radio" name="marka" value="Adidas">Adidas</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Típus</legend>
+               <h2>Nike</h2>
+                <p><label><input type="checkbox" name="tipus1" value="Air Jordan">Air Jordan</label></p>
+                <h4>Típus:</h4>
+                <p><label><input type="" name="tipus1" value=""></label></p>
+
+                <p><label><input type="checkbox" name="tipus2" value="Air Force">Air Force</label></p>
+                <h4>Típus:</h4>
+                <p><label><input type="" name="tipus1" value=""></label></p> 
+
+                <p><label><input type="checkbox" name="tipus3" value="Air Max">Air Max</label></p> <br>
+                <h4>Típus:</h4>
+                <p><label><input type="" name="tipus1" value=""></label></p> 
+
+                <br>
+                <br>
+                <br>
+
+               <h2>Adidas</h2>
+
+
+
+
+                <p><label><input type="checkbox" name="tipus1" value="Superstar">Superstar</label></p>
+                <h4>Típus:</h4>
+                <p><label><input type="" name="tipus1" value=""></label></p>
+
+
+                <p><label><input type="checkbox" name="tipus2" value="Supernova">Supernova</label></p>
+                <h4>Típus:</h4>
+                <p><label><input type="" name="tipus1" value=""></label></p>
+
+
+
+                <p><label><input type="checkbox" name="tipus3" value="Ultraboost ">Ultraboost</label></p>
+                <h4>Típus:</h4>
+                <p><label><input type="" name="tipus1" value=""></label></p>
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Végezetül</legend>
+                <p><label>mennyiség: <input type="number" name="mennyiseg"> pár</label></p>
+               
+                <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
+                <br>
+                <input type="reset" name="visszaallitas">
+                <input type="submit" name="kuldes">
+            </fieldset>
+        </form>
+   
+
+    
+</div>
+    
+</body>
+</html>
