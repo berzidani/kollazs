@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dani oldala</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href="logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+    <link rel="manifest" href="favic/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favic/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <script src="javascript.js"></script>
+    <style>
+       body {
+            background-color: rgb(170, 166, 158);
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        button {
+            border-radius: 5px;
+            background-color: burlywood;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html" >FŐOLDAL</a>
+        <a href="keplink.html">KÉPLINK</a>
+        <a href="listak.html">LISTÁK</a>
+        <a href="orarend.html">ÓRAREND</a>
+        <a href="urlap.html">ŰRLAP</a>
+        <a href="kosar.html" class="aktiv">KOSÁR</a>
+        <a href="tablazat.html">TÁBLÁZAT</a>
+        <a href="evszakok.html">ÉVSZAKOK</a>
+        <a href="regisztracio.html">REGISZTRÁCIÓ</a>
+    </div>
+
+
+
+
+    <div class="content">
+        <div class="fejlec">
+            <center>
+            <h1 class="kozep">Berzi Dániel oldala!</h1>
+            </center>
+        </div>
+        <div style="overflow-x:auto;">
+
+
+
+    <center>
+
+    <h1>Válaszd ki,majd tedd a kosárba azt,amelyik tetszik!</h1>
+
+    <button onclick="hozzaad('termek01')">
+        <img src="https://media.istockphoto.com/photos/sneakers-picture-id547128210?k=20&m=547128210&s=612x612&w=0&h=Ve6r1pK1y_EwZnQZo5falO65u7sX4ulKS51cRujOA_8="
+            alt="hack01">
+        <br> Termék01</button>
+    <button onclick="hozzaad('termek02')"> <img
+            src="https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/products/2022/3/3/20220302_NikeAirJordanLows1.jpg.rend.hgtvcom.861.615.suffix/1646257509568.jpeg" alt="hack02">
+        <br> Termék02</button>
+    <button onclick="hozzaad('termek03')"> <img
+            src="https://i.insider.com/5e382a935bc79c247c1cbc08?width=700"
+            alt="hack03">
+        <br> Termék03</button>
+    <br> <br>
+    <button onclick="torles()">TÖRLÉS</button>
+
+    <button onclick="kos()">KOSÁR TARTALMA:</button>
+
+    <br>
+
+    
+        
+    <br><br>
+    <button onclick=" termekek() ">Termék darabszáma</button>
+    <p id="darabszam"></p>
+</center>
+</body>
+
+</html>

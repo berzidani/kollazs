@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>Dani oldala</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="evszak.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
@@ -24,33 +25,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favic/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        fieldset{
-            width:max-content ;
-            background-color:cornflowerblue;
-            box-shadow: black;
-            margin: 0 auto 0 auto;
-            border: 2px solid black;
-            border-radius: 5px;
-        }
 
-        legend{
-            background-color: cornflowerblue;
-            text-align: center;
-            border: 2px solid black;
-            border-radius: 5px;
-        }
-       
-        button {
-            float:right;
-            padding: 5px;
-            border: 1px solid;
-            border-radius: 5px;
-        }
-           
-    </style>
+</head>
 
-<div class="sidebar">
+<body style="background-color: rgb(170, 166, 158);">
+
+  <div class="sidebar">
     <a  href="index.html" >FŐOLDAL</a>
     <a href="keplink.html">KÉPLINK</a>
     <a href="listak.html">LISTÁK</a>
@@ -58,54 +38,34 @@
     <a href="urlap.html">ŰRLAP</a>
     <a href="kosar.html">KOSÁR</a>
     <a href="tablazat.html">TÁBLÁZAT</a>
-    <a href="evszakok.html">ÉVSZAKOK</a>
-    <a href="regisztracio.html" class="aktiv">REGISZTRÁCIÓ</a>
+    <a href="evszakok.html" class="aktiv">ÉVSZAKOK</a>
+    <a href="regisztracio.html">REGISZTRÁCIÓ</a>
   </div>
 
-<div class="content">
+  <div class="content">
+    <div class="fejlec">
+        <h1 class="kozep">Berzi Dániel oldala!</h1>
 
-  <div class="fejlec">
-      <h1 class="kozep">Berzi Dániel oldala!</h1>
-  </div>
+        <h1 class="cimsor">Évszakok</h1>
 
-   <div class="footer">
-      <p>Copyright 🂱 Berzi Dániel ©</p>
-   </div>
+        <div class="container">
+            <div><img class="egy" src="tavasz.jpg"><h3 class="text">Tavasz</h2> </div>
 
-   
+            <div><img class="egy" src="nyár.jpg"><h3 class="text">Nyár</h2> </div>
 
-</head>
-<body style="background-color:rgb(170, 166, 158);">
-    <fieldset style="width: fit-content;" >
-       <legend>REGISZTRÁCIÓ</legend>
-       <input type="email"  id="emma" placeholder="Felhasználó Név"> <br>
-       <input type="password" id="jel1" placeholder="Jelszó"> <br>
-       <input type="password"  id="jel2" placeholder="Jelszó megerősítése" > <br>
-       <button  onclick="reg(emma.value,jel1.value,jel2.value)">Regisztráció</button>
-    </fieldset>
-
-    <script>
-        function reg(user,pass1,pass2) {
-            if(user != "" && pass1 != "" && pass2 != "") {
-                if (pass1 == pass2) {
-                    alert("Regisztrálva:" + user)
-                } else{
-                    alert("Nem egyezik meg a két jelszó")
-                }
-                }
-                else{
-                    alert("Rossz felhasználónév vagy jelszó")
-                }
-                
+            <div><img class="egy" src="ősz (2).jpg"> <h3 class="text">Ősz</h2> </div>
 
 
-            
-        
+            <div><img class="egy" src="tél.jpg"> <h3 class="text">Tél</h2> </div>
 
 
-        }
-    
-    </script>
+        </div>
 
+       
+
+    </div>
+    <div class="footer">
+        <p>Copyright  🂱 Berzi Dániel ©</p>
+    </div>
 </body>
 </html>
